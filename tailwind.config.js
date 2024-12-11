@@ -11,6 +11,15 @@ module.exports = {
       primary: "var(--font-jetbrainsMono)"
     },
     extend: {
+      animation: {
+        wave: "wave .6s infinite ease-in-out"
+      },
+      keyframes: {
+        wave: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(20deg)" }
+        }
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

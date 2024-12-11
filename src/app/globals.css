@@ -69,4 +69,16 @@
   body {
     @apply bg-[#1c1c22] text-white font-primary leading-loose;
   }
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0);
+  } 
+  50% {
+    transform: rotate(20deg);
+  }
 }

@@ -14,7 +14,7 @@ const links = [
     path: "/works"
   },
   {
-    name: "about",
+    name: "about me",
     path: "/about"
   },
   {
@@ -30,27 +30,26 @@ const links = [
 const MobileNav = () => {
   const pathname = usePathname();
   return (
-    <Sheet className="flex-justify-center items-center">
+    <Sheet className="items-center flex-justify-center">
       <SheetTrigger>
         <CiMenuFries className="text-[32px] text-primary" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <div className="mt-32 mb-40 text-center text-2xl">
+        <div className="mt-32 mb-40 text-2xl text-center">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
               Isaiah<span className="text-primary">.</span>
             </h1>
           </Link>
         </div>
-        <nav className="flex flex-col justify-center items-center gap-8">
+        <nav className="flex flex-col items-center justify-center gap-8">
           {links.map((link, index) => (
             <Link
               href={link.path}
               key={index}
-              className={`${
-                link.path === pathname &&
+              className={`${link.path === pathname &&
                 "text-primary border-b-2 border-primary"
-              } text-xl capitalize hover:text-primary transition-all`}
+                } text-xl capitalize hover:text-primary transition-all`}
             >
               {link.name}
             </Link>
