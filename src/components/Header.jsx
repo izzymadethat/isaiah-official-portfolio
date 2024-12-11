@@ -5,17 +5,19 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
-      <div className="container mx-auto flex justify-between">
+    <header className="py-8 text-white xl:py-12">
+      <div className="container flex justify-between mx-auto">
         <Link href="/">
           <h1 className="text-4xl font-semibold">
             Isaiah<span className="text-primary">.</span>
           </h1>
         </Link>
-        <div className="hidden xl:flex gap-8 items-center">
+        <div className="items-center hidden gap-8 xl:flex">
           <Nav />
-          <Button className="text-xs font-bold uppercase">
-            Download Resume
+          <Button className="text-xs font-bold uppercase" asChild>
+            <Link href="/assets/resume/IsaiahVickers_SWE_Resume.pdf" download="IsaiahVickers_SWE_Resume.pdf" target="_blank" >
+              Download Resume
+            </Link>
           </Button>
         </div>
         {/* Mobile nav */}

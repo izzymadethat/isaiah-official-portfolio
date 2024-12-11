@@ -108,7 +108,7 @@ const ContactPage = () => {
               <h3 className="text-4xl font-bold text-center xl:text-left text-primary">
                 Available for Hire
               </h3>
-              <p>Text here</p>
+              <p>Let’s Build the Future Together – Reach Out if You're Looking for a Passionate Software Developer!</p>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <Input
                   type="text"
